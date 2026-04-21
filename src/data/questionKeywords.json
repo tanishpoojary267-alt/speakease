@@ -1,0 +1,382 @@
+{
+    "description": "Speakease AI — Question Keywords Dataset v1",
+    "info": "Each question has exactly 10 keywords. An answer is RELEVANT if at least 3 of these 10 words appear anywhere in the user's spoken answer (case-insensitive). Below 3 matches = off-topic warning.",
+    "threshold": 3,
+    "questions": [
+        {
+            "q": "tell me about yourself",
+            "keywords": [
+                "background",
+                "experience",
+                "skills",
+                "education",
+                "career",
+                "work",
+                "study",
+                "interest",
+                "professional",
+                "role"
+            ]
+        },
+        {
+            "q": "why should we hire you",
+            "keywords": [
+                "skills",
+                "value",
+                "strength",
+                "experience",
+                "contribution",
+                "team",
+                "benefit",
+                "unique",
+                "hire",
+                "fit"
+            ]
+        },
+        {
+            "q": "what are your strengths and weaknesses",
+            "keywords": [
+                "strength",
+                "weakness",
+                "improve",
+                "skill",
+                "challenge",
+                "develop",
+                "aware",
+                "growth",
+                "work",
+                "example"
+            ]
+        },
+        {
+            "q": "where do you see yourself in 5 years",
+            "keywords": [
+                "goal",
+                "career",
+                "future",
+                "growth",
+                "plan",
+                "leadership",
+                "develop",
+                "skill",
+                "ambition",
+                "years"
+            ]
+        },
+        {
+            "q": "describe a time you worked in a team",
+            "keywords": [
+                "team",
+                "collaborate",
+                "role",
+                "project",
+                "together",
+                "communication",
+                "conflict",
+                "member",
+                "helped",
+                "achieve"
+            ]
+        },
+        {
+            "q": "how do you handle pressure or stress",
+            "keywords": [
+                "pressure",
+                "stress",
+                "deadline",
+                "prioritize",
+                "calm",
+                "manage",
+                "focus",
+                "organize",
+                "handle",
+                "task"
+            ]
+        },
+        {
+            "q": "what is object oriented programming",
+            "keywords": [
+                "object",
+                "class",
+                "inheritance",
+                "encapsulation",
+                "polymorphism",
+                "abstraction",
+                "method",
+                "instance",
+                "programming",
+                "property"
+            ]
+        },
+        {
+            "q": "explain the difference between a stack and a queue",
+            "keywords": [
+                "stack",
+                "queue",
+                "lifo",
+                "fifo",
+                "push",
+                "pop",
+                "insert",
+                "remove",
+                "order",
+                "structure"
+            ]
+        },
+        {
+            "q": "what is version control and why is git important",
+            "keywords": [
+                "git",
+                "version",
+                "control",
+                "commit",
+                "branch",
+                "merge",
+                "repository",
+                "track",
+                "history",
+                "code"
+            ]
+        },
+        {
+            "q": "what programming languages are you comfortable with",
+            "keywords": [
+                "language",
+                "python",
+                "javascript",
+                "java",
+                "code",
+                "programming",
+                "experience",
+                "project",
+                "syntax",
+                "framework"
+            ]
+        },
+        {
+            "q": "how does the internet work",
+            "keywords": [
+                "internet",
+                "server",
+                "client",
+                "http",
+                "request",
+                "response",
+                "network",
+                "protocol",
+                "browser",
+                "data"
+            ]
+        },
+        {
+            "q": "what is an api",
+            "keywords": [
+                "api",
+                "interface",
+                "request",
+                "response",
+                "endpoint",
+                "data",
+                "rest",
+                "json",
+                "integration",
+                "service"
+            ]
+        },
+        {
+            "q": "what is the difference between sql and nosql",
+            "keywords": [
+                "sql",
+                "nosql",
+                "database",
+                "relational",
+                "schema",
+                "query",
+                "document",
+                "table",
+                "flexible",
+                "scalable"
+            ]
+        },
+        {
+            "q": "how do you handle tight deadlines",
+            "keywords": [
+                "deadline",
+                "prioritize",
+                "time",
+                "task",
+                "organize",
+                "plan",
+                "focus",
+                "pressure",
+                "manage",
+                "deliver"
+            ]
+        },
+        {
+            "q": "describe a project you are proud of",
+            "keywords": [
+                "project",
+                "built",
+                "developed",
+                "challenge",
+                "outcome",
+                "technology",
+                "team",
+                "result",
+                "feature",
+                "goal"
+            ]
+        },
+        {
+            "q": "what motivates you",
+            "keywords": [
+                "motivate",
+                "passion",
+                "goal",
+                "challenge",
+                "impact",
+                "growth",
+                "drive",
+                "purpose",
+                "achieve",
+                "reward"
+            ]
+        },
+        {
+            "q": "how do you stay updated with technologies",
+            "keywords": [
+                "learn",
+                "technology",
+                "course",
+                "blog",
+                "read",
+                "practice",
+                "community",
+                "update",
+                "skill",
+                "trend"
+            ]
+        },
+        {
+            "q": "what are your salary expectations",
+            "keywords": [
+                "salary",
+                "compensation",
+                "market",
+                "range",
+                "negotiate",
+                "package",
+                "experience",
+                "value",
+                "research",
+                "expect"
+            ]
+        },
+        {
+            "q": "why are you interested in this role",
+            "keywords": [
+                "role",
+                "interest",
+                "company",
+                "skill",
+                "grow",
+                "contribute",
+                "passion",
+                "mission",
+                "opportunity",
+                "align"
+            ]
+        },
+        {
+            "q": "how do you handle failure",
+            "keywords": [
+                "fail",
+                "mistake",
+                "learn",
+                "lesson",
+                "improve",
+                "reflect",
+                "recover",
+                "outcome",
+                "overcome",
+                "experience"
+            ]
+        },
+        {
+            "q": "what is responsive design",
+            "keywords": [
+                "responsive",
+                "design",
+                "mobile",
+                "breakpoint",
+                "css",
+                "layout",
+                "screen",
+                "viewport",
+                "flexible",
+                "grid"
+            ]
+        },
+        {
+            "q": "explain time complexity",
+            "keywords": [
+                "complexity",
+                "algorithm",
+                "notation",
+                "time",
+                "space",
+                "efficient",
+                "loop",
+                "performance",
+                "big",
+                "operation"
+            ]
+        },
+        {
+            "q": "what is your greatest achievement",
+            "keywords": [
+                "achievement",
+                "accomplished",
+                "proud",
+                "result",
+                "impact",
+                "challenge",
+                "success",
+                "goal",
+                "team",
+                "overcome"
+            ]
+        },
+        {
+            "q": "how do you handle constructive feedback",
+            "keywords": [
+                "feedback",
+                "constructive",
+                "improve",
+                "listen",
+                "respond",
+                "accept",
+                "grow",
+                "perspective",
+                "open",
+                "apply"
+            ]
+        },
+        {
+            "q": "describe your ideal work environment",
+            "keywords": [
+                "environment",
+                "culture",
+                "team",
+                "collaborate",
+                "flexible",
+                "structure",
+                "support",
+                "communication",
+                "pace",
+                "remote"
+            ]
+        }
+    ]
+}

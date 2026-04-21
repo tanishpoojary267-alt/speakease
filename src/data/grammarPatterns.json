@@ -1,0 +1,329 @@
+{
+    "description": "Speakease AI — Grammar Patterns Dataset v1",
+    "info": "Regex-based grammar rules for interview speech analysis. Add your own patterns below. Each rule: { pattern (regex string), type, hint }",
+    "sentenceQuality": {
+        "minSentenceLengthWords": 5,
+        "targetWordsPerSentence": 12,
+        "minVocabDiversityPercent": 55,
+        "interviewProfessionalWords": [
+            "experience",
+            "skill",
+            "contribute",
+            "develop",
+            "achieve",
+            "manage",
+            "lead",
+            "collaborate",
+            "implement",
+            "analyze",
+            "solution",
+            "project",
+            "team",
+            "goal",
+            "challenge",
+            "result",
+            "impact",
+            "process",
+            "strategy",
+            "communicate",
+            "professional",
+            "responsibility",
+            "initiative",
+            "performance",
+            "ensure"
+        ],
+        "vagueWeakWords": [
+            "thing",
+            "stuff",
+            "good",
+            "nice",
+            "okay",
+            "fine",
+            "normal",
+            "basic",
+            "whatever",
+            "somewhere",
+            "somehow",
+            "anyone",
+            "anything",
+            "everything"
+        ]
+    },
+    "rules": [
+        {
+            "pattern": "\\b(i|he|she|it)\\s+(are|were)\\b",
+            "type": "subject-verb",
+            "hint": "Use 'is/was' with I/he/she/it"
+        },
+        {
+            "pattern": "\\b(they|we|you)\\s+(is|was)\\b",
+            "type": "subject-verb",
+            "hint": "Use 'are/were' with they/we/you"
+        },
+        {
+            "pattern": "\\b(he|she|it)\\s+(don't|haven't|weren't)\\b",
+            "type": "subject-verb",
+            "hint": "Use doesn't/hasn't/wasn't with he/she/it"
+        },
+        {
+            "pattern": "\\b(i|we|they|you)\\s+(doesn't|hasn't|wasn't)\\b",
+            "type": "subject-verb",
+            "hint": "Use don't/haven't/weren't"
+        },
+        {
+            "pattern": "\\bi have\\s+(went|came|did|ran|saw|ate|drank|slept|got|gave|took|made)\\b",
+            "type": "tense",
+            "hint": "Use past participle: gone/come/done/run/seen/eaten..."
+        },
+        {
+            "pattern": "\\b(yesterday|last\\s+(week|month|year))\\s+i\\s+(go|come|make|take|give|do|say|get|run|see|eat|sleep|work)\\b",
+            "type": "tense",
+            "hint": "Use past tense after yesterday/last..."
+        },
+        {
+            "pattern": "\\bwill\\s+went\\b",
+            "type": "tense",
+            "hint": "'will went' → 'will go'"
+        },
+        {
+            "pattern": "\\bwould\\s+went\\b",
+            "type": "tense",
+            "hint": "'would went' → 'would go'"
+        },
+        {
+            "pattern": "\\bme\\s+and\\s+\\w+\\s+(went|did|are|were|have|had|will|can|got|made|saw)\\b",
+            "type": "pronoun",
+            "hint": "Use 'I and...' not 'me and...'"
+        },
+        {
+            "pattern": "\\bbetween\\s+you\\s+and\\s+i\\b",
+            "type": "pronoun",
+            "hint": "'between you and me' (object pronoun after preposition)"
+        },
+        {
+            "pattern": "\\btheirselves\\b",
+            "type": "pronoun",
+            "hint": "'themselves' not 'theirselves'"
+        },
+        {
+            "pattern": "\\bhisself\\b",
+            "type": "pronoun",
+            "hint": "'himself' not 'hisself'"
+        },
+        {
+            "pattern": "\\ba\\s+(a|e|i|o|u)[a-z]{2,}",
+            "type": "article",
+            "hint": "Use 'an' before vowel sounds"
+        },
+        {
+            "pattern": "\\ban\\s+(b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z)[a-z]{2,}",
+            "type": "article",
+            "hint": "Use 'a' before consonant sounds"
+        },
+        {
+            "pattern": "\\bcould\\s+of\\b",
+            "type": "grammar",
+            "hint": "'could have' not 'could of'"
+        },
+        {
+            "pattern": "\\bshould\\s+of\\b",
+            "type": "grammar",
+            "hint": "'should have' not 'should of'"
+        },
+        {
+            "pattern": "\\bwould\\s+of\\b",
+            "type": "grammar",
+            "hint": "'would have' not 'would of'"
+        },
+        {
+            "pattern": "\\bmight\\s+of\\b",
+            "type": "grammar",
+            "hint": "'might have' not 'might of'"
+        },
+        {
+            "pattern": "\\bmust\\s+of\\b",
+            "type": "grammar",
+            "hint": "'must have' not 'must of'"
+        },
+        {
+            "pattern": "\\birregardless\\b",
+            "type": "grammar",
+            "hint": "Use 'regardless'"
+        },
+        {
+            "pattern": "\\bmore\\s+better\\b",
+            "type": "grammar",
+            "hint": "Just 'better'"
+        },
+        {
+            "pattern": "\\bmore\\s+faster\\b",
+            "type": "grammar",
+            "hint": "Just 'faster'"
+        },
+        {
+            "pattern": "\\bvery\\s+unique\\b",
+            "type": "grammar",
+            "hint": "'unique' needs no qualifier — things simply are or aren't unique"
+        },
+        {
+            "pattern": "\\bdiscuss\\s+about\\b",
+            "type": "grammar",
+            "hint": "'discuss' directly — no 'about' needed"
+        },
+        {
+            "pattern": "\\bexplain\\s+about\\b",
+            "type": "grammar",
+            "hint": "'explain' directly — no 'about' needed"
+        },
+        {
+            "pattern": "\\b(don't|doesn't|didn't|can't|won't|isn't|aren't|never)\\s+\\w*\\s*(no|nothing|nobody|nowhere|neither)\\b",
+            "type": "double-negative",
+            "hint": "Double negative — use only one negative word"
+        },
+        {
+            "pattern": "\\bgonna\\b",
+            "type": "informal",
+            "hint": "Say 'going to' in interviews"
+        },
+        {
+            "pattern": "\\bwanna\\b",
+            "type": "informal",
+            "hint": "Say 'want to'"
+        },
+        {
+            "pattern": "\\bgotta\\b",
+            "type": "informal",
+            "hint": "Say 'have to'"
+        },
+        {
+            "pattern": "\\bkinda\\b",
+            "type": "informal",
+            "hint": "Say 'kind of'"
+        },
+        {
+            "pattern": "\\bsorta\\b",
+            "type": "informal",
+            "hint": "Say 'sort of'"
+        },
+        {
+            "pattern": "\\bdunno\\b",
+            "type": "informal",
+            "hint": "Say 'I don't know'"
+        },
+        {
+            "pattern": "\\byeah\\b",
+            "type": "informal",
+            "hint": "Say 'yes' in interviews"
+        },
+        {
+            "pattern": "\\bnope\\b",
+            "type": "informal",
+            "hint": "Say 'no'"
+        },
+        {
+            "pattern": "\\byup\\b",
+            "type": "informal",
+            "hint": "Say 'yes'"
+        },
+        {
+            "pattern": "\\bcoz\\b|\\bcuz\\b",
+            "type": "informal",
+            "hint": "Say 'because'"
+        },
+        {
+            "pattern": "\\blotta\\b",
+            "type": "informal",
+            "hint": "Say 'a lot of'"
+        },
+        {
+            "pattern": "\\bi\\s+mean\\s*,?\\s*like\\b",
+            "type": "filler-phrase",
+            "hint": "Avoid 'I mean, like' — state your point directly"
+        },
+        {
+            "pattern": "\\band\\s+stuff\\s+(like\\s+that)?\\b",
+            "type": "vague",
+            "hint": "Be specific — avoid 'and stuff'"
+        },
+        {
+            "pattern": "\\betc\\b",
+            "type": "vague",
+            "hint": "Avoid 'etc.' in speech — list items explicitly"
+        },
+        {
+            "pattern": "\\bi\\s+don't\\s+got\\b",
+            "type": "grammar",
+            "hint": "Say 'I don't have'"
+        },
+        {
+            "pattern": "\\bI\\s+is\\b",
+            "type": "subject-verb",
+            "hint": "'I am' not 'I is'"
+        },
+        {
+            "pattern": "\\bthis\\s+informations\\b|\\bthis\\s+advices\\b|\\bthis\\s+feedbacks\\b",
+            "type": "grammar",
+            "hint": "'information', 'advice', 'feedback' are uncountable — no plural 's'"
+        },
+        {
+            "pattern": "\\bopen\\s+the\\s+laptop\\s+and\\s+work\\b",
+            "type": "grammar",
+            "hint": "Avoid redundant phrases"
+        },
+        {
+            "pattern": "\\bdo\\s+one\\s+thing\\b",
+            "type": "informal",
+            "hint": "Avoid 'do one thing' — common informal filler (Indian English)"
+        },
+        {
+            "pattern": "\\bonly\\s+na\\b|\\bjust\\s+na\\b|\\bna\\s+na\\b",
+            "type": "informal",
+            "hint": "Avoid 'na' — informal filler not appropriate in interviews"
+        },
+        {
+            "pattern": "\\bno\\s+doubt\\b",
+            "type": "informal",
+            "hint": "Too casual — say 'certainly' or 'definitely'"
+        },
+        {
+            "pattern": "\\bchance\\s+is\\s+less\\b|\\bless\\s+chance\\b",
+            "type": "grammar",
+            "hint": "Say 'fewer chances' or 'lower probability'"
+        },
+        {
+            "pattern": "\\bI\\s+am\\s+having\\b",
+            "type": "tense",
+            "hint": "Say 'I have' — 'having' is for continuous actions, not possession"
+        },
+        {
+            "pattern": "\\bsince\\s+(\\d+)\\s+years\\b",
+            "type": "grammar",
+            "hint": "Say 'for X years' not 'since X years'"
+        },
+        {
+            "pattern": "\\bi\\s+did\\s+not\\s+knew\\b",
+            "type": "tense",
+            "hint": "'I did not know' — use base verb after 'did not'"
+        },
+        {
+            "pattern": "\\bi\\s+passed\\s+out\\b",
+            "type": "informal",
+            "hint": "Say 'I graduated from' — 'passed out' is informal Indian English"
+        },
+        {
+            "pattern": "\\bdoing\\s+the\\s+needful\\b",
+            "type": "informal",
+            "hint": "Avoid 'do the needful' — outdated formal phrasing"
+        },
+        {
+            "pattern": "\\bkindly\\s+revert\\b",
+            "type": "informal",
+            "hint": "Say 'please reply' — 'kindly revert' is incorrect usage"
+        },
+        {
+            "pattern": "\\bpreponed\\b",
+            "type": "grammar",
+            "hint": "Say 'rescheduled to an earlier time' — 'preponed' is not standard English"
+        }
+    ]
+}
